@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ScheduleBusTest" parallel="tests" thread-count="5">
+    <test name="ChromeTest" verbose="1" parallel="true">
+        <classes>
+            <class name="tests.TestGoogleSearch" />
+            <class name="tests.TestGoogleSearch1" />
+        </classes>
+    </test>
+</suite>
