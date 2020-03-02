@@ -1,9 +1,7 @@
 package tests;
 import helpers.App;
 import org.testng.ITestContext;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 import utils.WebDriverInstansiator;
 
 import java.net.MalformedURLException;
@@ -22,7 +20,7 @@ public class BaseTest {
         app.login.open();
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown(){
        WebDriverInstansiator.getDriver().quit();
     }
