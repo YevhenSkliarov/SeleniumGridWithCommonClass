@@ -11,7 +11,6 @@ import utils.WebDriverInstansiator;
 import java.net.MalformedURLException;
 
 public class BaseTest {
-
     @BeforeMethod
     public void initDriver(ITestContext context) throws MalformedURLException {
         WebDriverInstansiator.setDriver();
