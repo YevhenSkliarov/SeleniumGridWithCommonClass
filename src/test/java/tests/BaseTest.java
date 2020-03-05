@@ -1,27 +1,24 @@
 package tests;
+
 import helpers.App;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
+import pages.BasePage;
+import pages.LoginPage;
+import sun.rmi.runtime.Log;
 import utils.WebDriverInstansiator;
 
 import java.net.MalformedURLException;
 
 public class BaseTest {
-    App app;
-
-    @BeforeClass
-    public void initDriver(ITestContext context) throws MalformedURLException {
-        WebDriverInstansiator.setDriver();
-        app = new App();
-    }
 
     @BeforeMethod
-    public void setUp() {
-        app.login.open();
+    public void initDriver(ITestContext context) throws MalformedURLException {
+        WebDriverInstansiator.setDriver();
     }
 
     @AfterMethod
-    public void tearDown(){
-       WebDriverInstansiator.getDriver().quit();
+    public void tearDown() {
+        WebDriverInstansiator.getDriver().quit();
     }
 }
