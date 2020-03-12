@@ -2,12 +2,15 @@ package tests;
 
 import helpers.App;
 import org.testng.annotations.*;
+import user.User;
+import user.UserFactory;
 import utils.WebDriverInstansiator;
 
 import java.net.MalformedURLException;
 
 public class BaseTest {
-    protected ThreadLocal<App> app = new ThreadLocal<>();
+    private ThreadLocal<App> app = new ThreadLocal<>();
+    static User user = UserFactory.getUser();
 
     @BeforeMethod
     public void initDriver() throws MalformedURLException {
@@ -15,7 +18,7 @@ public class BaseTest {
         app.set(new App());
     }
 
-    protected App app() {
+    App app() {
         return app.get();
     }
 
