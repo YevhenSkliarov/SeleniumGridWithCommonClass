@@ -10,7 +10,6 @@ public class TestGoogleSearch extends BaseTest {
     public void shouldBeBlogTitle() {
         app().login.open();
         app().login.login(user);
-
         Assert.assertEquals(app().dashboard.getLblUserEmail(), user.email);
     }
 
@@ -18,7 +17,6 @@ public class TestGoogleSearch extends BaseTest {
     public void shouldBeBlogTitle1() {
         app().login.open();
         app().login.login(user);
-
         Assert.assertEquals(app().dashboard.getLblUserEmail(), user.email);
     }
 
