@@ -1,5 +1,6 @@
 <suite thread-count="2" name="Suite" parallel="tests" >
     <test name="java.tests.FirstTest" parallel="methods" thread-count="5">
+        <parameter name="browserName" value="chrome" />
         <classes>
             <class name="tests.TestGoogleSearch">
                 <methods>
@@ -10,6 +11,7 @@
         </classes>
     </test> <!-- First Test -->
     <test name="SecondTest" parallel="methods" thread-count="5">
+        <parameter name="browserName" value="firefox" />
         <classes>
             <class name="tests.TestGoogleSearch1">
                 <methods>

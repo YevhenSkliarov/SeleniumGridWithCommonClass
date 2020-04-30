@@ -15,8 +15,9 @@ public class BaseTest {
     static User user = UserFactory.getUser();
 
     @BeforeMethod
-    public void initDriver() throws MalformedURLException {
-        WebDriverInstansiator.setDriver();
+    @Parameters({"browserName"})
+    public void initDriver(String browserName) throws MalformedURLException {
+        WebDriverInstansiator.setDriver(browserName);
         app.set(new App());
     }
 
