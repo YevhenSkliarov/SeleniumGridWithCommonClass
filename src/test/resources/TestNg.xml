@@ -2,7 +2,7 @@
     <test name="java.tests.FirstTest" parallel="methods" thread-count="5">
         <parameter name="browserName" value="chrome" />
         <classes>
-            <class name="tests.TestGoogleSearch">
+            <class name="tests.TestLogin">
                 <methods>
                     <include name="shouldBeBlogTitle" />
                     <include name="shouldBeBlogTitle1" />
@@ -13,7 +13,7 @@
     <test name="SecondTest" parallel="methods" thread-count="5">
         <parameter name="browserName" value="firefox" />
         <classes>
-            <class name="tests.TestGoogleSearch1">
+            <class name="tests.TestLogin1">
                 <methods>
                     <include name="shouldBeBlogTitle3" />
                     <include name="shouldBeBlogTitle4" />

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class TestGoogleSearch extends BaseTest {
+public class TestLogin extends BaseTest {
 
     @Test
     public void shouldBeBlogTitle() {

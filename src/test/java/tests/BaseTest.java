@@ -1,8 +1,6 @@
 package tests;
 
 import helpers.App;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import user.User;
 import user.UserFactory;
