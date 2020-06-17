@@ -1,8 +1,6 @@
 package tests;
 
 import helpers.App;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import user.User;
 import user.UserFactory;
@@ -15,7 +13,7 @@ public class BaseTest {
     static User user = UserFactory.getUser();
 
     @BeforeMethod
-    @Parameters({"browserName"})
+    @Parameters("browserName")
     public void initDriver(String browserName) throws MalformedURLException {
         WebDriverInstansiator.setDriver(browserName);
         app.set(new App());
