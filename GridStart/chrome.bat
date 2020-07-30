@@ -1,0 +1,1 @@
+java "-Dwebdriver.chrome.driver=C:\Users\User\IdeaProjects\it\gridStart\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub "http://192.168.31.49:4444/grid/register" -port 4546
