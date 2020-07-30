@@ -4,7 +4,7 @@ Clone project
 
 open project and install dependencies
 
-<b>Open chrome bat in notepad++ and check that path to chrome driver is correct</b>
+<b>Open chrome bat(located in GridStart folder) in notepad++ and check that path to chrome driver is correct. Chromedriver is located GridStart folder</b>
 
 open GridStart folder and run start.bat 
 
