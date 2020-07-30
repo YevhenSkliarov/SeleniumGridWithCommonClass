@@ -9,4 +9,5 @@ open project and install dependencies
 open GridStart folder and run start.bat 
 
 Open Grandle panel in Idea => Tasks => build => run clean task
+
 Open Grandle panel in Idea => Tasks => verification => run test task
